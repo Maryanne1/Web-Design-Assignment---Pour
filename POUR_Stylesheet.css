@@ -1,5 +1,11 @@
 * {box-sizing: border-box;}
 
+/* Information on grids sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout 
+	 Grid code developed on https://codepen.io/pen/
+*/
+
+/* Index page grid layout */
+
 .pagelayout {
 				width: 100%;
 				margin: 0;
@@ -15,9 +21,86 @@
 				grid-gap: 0px;
 				grid-auto-rows: minmax(100px, auto);
 			}
+.homeheader 	{
+				grid-columns: 1/6;
+				grid-rows: 1;
+				position: fixed;
+				padding: 0;
+			}
+.topmenu		{
+				grid-columns: 1/6;
+				grid-rows: 2;
+				position: fixed;
+				padding: 0;
+			}
+.homearticle	{grid-columns: 1/6;
+				grid-rows: 3/7;
+				position: fixed;
+				margin: 0;
+				padding: 0;
+			}	
+.homefooter {   
+				grid-columns: 1/6;
+				grid-rows: 7;
+				position: fixed;
+				padding: 0;
+				
+}	
+
+.homeheader		{	position: fixed; top:0px; margin: auto; width: 100%; height: 108px; 
+				background-color: blue;
+				font-family: verdana;
+				color: #ffffff;
+				font-size: 600%;
+				text-align: center;
+				text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
+			}
+.topmenu	{    position: fixed; top:108px; margin: auto; width: 100%; height: 164px;
+}
+.homearticle	{	position: fixed; top: 164px; margin: auto; width:100%; height:100%;
+					background-color: #000000;
+				padding: 0px;
+				background-color: yellow;
+				font-family: verdana;
+				font-size: 400%;
+				text-align: centre;
+				text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
+			}
+.homefooter		{	position: fixed; bottom:0px; margin:auto; width: 100%;
+				background-color: blue;
+				color: #ffffff;
+				font-family: verdana;
+				font-size: 400%;
+				text-align: centre;
+				text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
+			}
+
+/* https://www.w3schools.com/css/css_navbar.asp */
+
+.topmenu {
+				overflow: hidden;
+				background-color: #333;
+				position: fixed;
+				top: 100;
+				width: 100%;
+		}
+
+.topmenu a {
+				float: left;
+				display: block;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+}
+
+/* Other pages grid layout */
+			
+
 .header 	{
 				grid-columns: 1/6;
-				grid-rows 1;
+				grid-rows: 1;
 				position: fixed;
 				padding: 0;
 			}
@@ -39,6 +122,10 @@
 				position: fixed;
 				padding: 0;
 			}
+/* Information sourced to edit atributes of header and footer in CSS 
+   http://lifeinthegrid.com/simple-css-fixed-header 
+   https://www.w3schools.com/css/css_dimension.asp */
+ 
 .header		{	position: fixed; top:0px; margin: auto; width: 100%; height: 108px; 
 				background-color: blue;
 				font-family: verdana;
@@ -63,6 +150,9 @@
 				text-align: centre;
 				text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
 			}
+			
+/* Initial code including menu from earlier work done in class*/
+			
 ul   {list-style-type: none;
 				margin: 0px;
 				padding: 0px;
@@ -82,12 +172,15 @@ li a.active {background-color: #001a00;
 li a:hover:not(.active) {background-color: #808080;
 				color: white;}
 
+/* Responsive Design https://www.w3schools.com/html/html_responsive.asp */				
+				
 @media (min-width: 640px) {
 	.grid{
 		<!-- add this in-->
 		}}
 
-
+/* using z-index for images
+ https://www.w3schools.com/cssref/pr_pos_z-index.asp */
 
 
 				
