@@ -17,71 +17,46 @@
 			}
 .pagelayout {
 				display: grid;
-				grid-template-columns: repeat(5, 7fr);
+				grid-template-columns: repeat(5, 7fr); /* column, row */
 				grid-gap: 0px;
 				grid-auto-rows: minmax(100px, auto);
 			}
-.homeheader 	{
+
+.topmenu		{
 				grid-columns: 1/6;
 				grid-rows: 1;
 				position: fixed;
 				padding: 0;
 			}
-.topmenu		{
-				grid-columns: 1/6;
-				grid-rows: 2;
-				position: fixed;
-				padding: 0;
-			}
 .homearticle	{grid-columns: 1/6;
-				grid-rows: 3/7;
+				grid-rows: 2/7;
 				position: fixed;
 				margin: 0;
 				padding: 0;
 			}	
-.homefooter {   
-				grid-columns: 1/6;
-				grid-rows: 7;
-				position: fixed;
-				padding: 0;
-				
-}	
 
-.homeheader		{	position: fixed; top:0px; margin: auto; width: 100%; height: 108px; 
-				background-color: blue;
-				font-family: verdana;
-				color: #ffffff;
-				font-size: 600%;
-				text-align: center;
-				text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
-			}
-.topmenu	{    position: fixed; top:108px; margin: auto; width: 100%; height: 164px;
+.topmenu	{    position: fixed; top:0px; margin: auto; width: 100%; height: 40px;
+				 font-family: verdana;
+				 padding: 0;
 }
-.homearticle	{	position: fixed; top: 164px; margin: auto; width:100%; height:100%;
+.homearticle	{ top: 40px; margin: auto; width:100%;
 					background-color: #000000;
 				padding: 0px;
-				background-color: yellow;
+				background-color: white;
 				font-family: verdana;
 				font-size: 400%;
 				text-align: centre;
 				text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
 			}
-.homefooter		{	position: fixed; bottom:0px; margin:auto; width: 100%;
-				background-color: blue;
-				color: #ffffff;
-				font-family: verdana;
-				font-size: 400%;
-				text-align: centre;
-				text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
-			}
+
 
 /* https://www.w3schools.com/css/css_navbar.asp */
 
 .topmenu {
 				overflow: hidden;
 				background-color: #333;
+				font-family: verdana;
 				position: fixed;
-				top: 100;
 				width: 100%;
 		}
 
@@ -89,11 +64,16 @@
 				float: left;
 				display: block;
 				color: #f2f2f2;
+				font-family: verdana;
 				text-align: center;
-				padding: 14px 16px;
+				padding: 14px 16px 5px 5px;
 				text-decoration: none;
 				font-size: 17px;
 }
+.topmenu a.active {background-color: #001a00;
+				color: white;}
+.topmenu a:hover:not(.active) {background-color: #808080;
+				color: white;}
 
 /* Other pages grid layout */
 			
