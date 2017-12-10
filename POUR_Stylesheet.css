@@ -159,9 +159,9 @@ li a:hover:not(.active) {background-color: #808080;
 				width: auto;}
 /* Responsive Design https://www.w3schools.com/html/html_responsive.asp */				
 				
-@media (min-width: 640px) {
+@media screen and (min-width: 640px) {
 	
-.headerimage{width: 100%;}
+#headerimage{width: auto;}
 
 }
 

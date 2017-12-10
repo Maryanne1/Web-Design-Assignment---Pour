@@ -3,28 +3,56 @@
 <head>
 <link rel="stylesheet" type="text/css" href="POUR_Stylesheet.css">
 <style>
+
+.portfoliobox {
+		float: left;
+		height:330px;
+		width: 283px;
+		margin: 5px;
+		border: 1px solid #2f261e; 
+		border-radius: 0px; }
 .portfolioimg {	
 		padding: 15px;
 		height:280px;
 		width: 280px;}
-.portfoliobox {
-		float: left;
-		height:330px;
-		width: 290px;
-		margin: 5px;
-		border: 1px solid #2f261e; 
-		border-radius: 8px; }
 .producttext { float: left;
-		padding-left: 18px;}
+		padding-left: 18px;
+		opacity: 1;
+		display: block;
+		transition: .5s ease;
+		backface-visibility: hidden;}
 .shoppingimg {
 		height:15px;
 		width: 15px;}
 img { 	width: auto;}
 
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
 
 
 .portfoliobox:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	
+}
+.portfolioimg:hover {
+	padding:0px;
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	opacity: 0.3;
+}
+.middle:hover {opacity: 1;}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 <!-- hover box shadow https://www.w3schools.com/css/css3_images.asp -->
@@ -46,8 +74,8 @@ img { 	width: auto;}
 <ul>
   <li><a class="active" href="#">Home</a></li>
   <li><a href="#">About</a></li>
+  <li><a href="#">Shop POUR</a></li>
   <li><a href="#">Contact Us</a></li>
-  <li><a href="#">Portfolio</a></li>
 </ul>
 </div>
 
@@ -58,6 +86,7 @@ img { 	width: auto;}
 <a href="#" alt="Light 1">
 <img class="portfolioimg" src="images/instaimage1.png"> </a>
 <div class="producttext">
+<div class="middle"><div class="text">View</div></div>
 Light 1  </div> <a href="#" alt="Add to Cart"><img class="shoppingimg" src="images/shopping-cart.png"></a>
 </div>
 <div class="portfoliobox">
@@ -126,7 +155,8 @@ Subscribe to our mailing list: <input type="text" name="email" value="">
 <img src="images/instagram.png" href="#" style="float:right; width: 30px; padding:2px;">
 <!-- Instagram Icon by https://www.flaticon.com/free-icon/instagram_174855 -->
 <!-- Facebook Icon by https://www.flaticon.com/free-icon/facebook_174848 -->
-
+<br>
+<a href="#">Delivery</a> | <a href="#">Returns</a> | <a href="#">Track Order</a>
 <br>
 <br>
 Copyright &copy; POUR
