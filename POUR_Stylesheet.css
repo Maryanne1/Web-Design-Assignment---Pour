@@ -79,7 +79,7 @@
 .topmenu a:hover:not(.active) {background-color: #808080;
 				color: white;}
 
-/* Other pages grid layout */
+/* About, Shop and Contact Us pages grid layout */
 			
 
 .header 	{
@@ -157,11 +157,12 @@ li a:hover:not(.active) {background-color: #808080;
 				
 .headerimage {	float:center;
 				width: auto;}
+				
 /* Responsive Design https://www.w3schools.com/html/html_responsive.asp */				
 				
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 	
-#headerimage{width: auto;}
+.headerimage{width: auto;}
 
 }
 
