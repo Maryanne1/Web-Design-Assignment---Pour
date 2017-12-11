@@ -15,30 +15,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-
-<!-- https://stackoverflow.com/questions/19108112/show-image-over-another-image-on-hover -->
-<!--
-.homepage-image 	{position: relative;}
-.homepage-image img {width: 100%;
-					border-radius: 0px;
-					display: block;
-}
-.image_hover_bg		{background: transparent url('images/HelloKristofCrop2.jpg');
-					position: absolute;
-					width: 100%;
-					top: 0;
-					z-index: 100;
-					display:none;
-}
-.homepage-image:hover .image_hover_bg	{display:block;
-										 z-index: 100;
-										 }
-										 
-<!-- info about z index https://www.w3schools.com/cssref/pr_pos_z-index.asp -->									 
-
-<!-- .homearticle {background: linear-gradient(to bottom, #333 40%, #ffffff 100%);
-      margin: 0;}  -->
-
 img {position: relative; width: 100%;}
 </style>
 
@@ -58,8 +34,8 @@ img {position: relative; width: 100%;}
 
 
 <div class="homearticle">
-<a href="Shop.html"> <picture>
-
+<a href="Shop.html"> 
+<picture>
 <!-- width responsive images  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_picture -->
 
 <source media="(min-width: 1000px)" srcset="images/HelloKristofCrop.png" >
@@ -67,14 +43,14 @@ img {position: relative; width: 100%;}
 
 <!-- <div class="homepage-image" style="width:auto;"> -->
 
- <img src="images/HelloKristofNarrow.jpg" >
+ <img src="images/HelloKristofNarrow.jpg" alt="shop">
 
 <!-- <div class="image_hover_bg" href="Portfolio_Page.html"></div> -->
 
+</picture>
+</a>
 </div>
-</picture></a>
 <br>
 <br>
-</div>
 </div>
 </html>

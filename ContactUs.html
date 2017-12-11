@@ -15,7 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-<!-- Form styling -->
+
 </style>
 <title>Contact POUR</title>
 </head>
@@ -23,7 +23,7 @@
 <div class="pagelayout">
 
 <div class="header">
-  <img class="headerimage" src="images/LogoSmall.png">
+  <img class="headerimage" src="images/LogoSmall.png" alt="POUR">
 </div>
 
 <div class="sidebar">
@@ -38,45 +38,45 @@
 <form>
 
 <fieldset>
-<h1> Contact form</h1>
 
+<h1> Contact form</h1>
+<br>
 Please send us on your details and we'll get back to you as soon as possible!<br>
 <br>
 
+<b>Your Details</b>
 <table style="width:100%">
+
   <tr>
-	<th> Your Details:</th>
+    <td>First Name:
+	</td>
+    <td>
+	<input type="text" name="firstname" value="">
+	</td> 
   </tr>
   <tr>
-    <td>First Name:</td>
-    <td><input type="text" name="firstname" value=""></td> 
+    <td>Last name:
+	</td>
+    <td>
+	<input type="text" name="lastname" value="">
+	</td>
   </tr>
   <tr>
-    <td>Last name:</td>
-    <td><input type="text" name="lastname" value=""></td>
-  </tr>
-  <tr>
-    <td>Email Address:</td>
-    <td><input type="email" name="email" value=""></td>
+    <td>Email Address:
+	</td>
+    <td>
+	<input type="email" name="email" value="">
+	</td>
   </tr>
 </table>
 <br>
 
-  <fieldset>
-
-   <legend>Your Details:</legend>
-<br>
-First name:<input type="text" name="firstname" value="">
- 
-<br>
-Last name:<input type="text" name="lastname" value="">
-<br>
-Email Address:<input type="email" name="email" value=""></fieldset><br>
 <br>
 Would you like to sign up to our newsletter?<br>
 <input type="radio" name="newsletter" value="Yes">Yes please, sign me up!<br>
 <input type="radio" name="newsletter" value="No">No thanks, I'm good!<br>
 <br>
+
 I am interested in:<br>
 <input type="checkbox" name="product interest" value="lighting">Lighting<br>
 <input type="checkbox" name="product interest" value="ceramics">Ceramics<br>
@@ -88,15 +88,17 @@ Please write your message here:<br>
 </textarea>
 <br><br>
 <input type="submit" value="Submit">
-</fieldset></form>
+
+</fieldset>
+</form>
 </div>
 <!--thank you box to pop up-->
 
 
 <div class="footer">
 Subscribe to our mailing list: <input type="text" name="email" value="">
-<img src="images/facebook.png" href="https://www.facebook.com/" style="float:right; width: 30px; padding:2px;">
-<img src="images/instagram.png" href="https://www.instagram.com/pour_studio/" style="float:right; width: 30px; padding:2px;">
+<a href="https://www.facebook.com/"><img src="images/facebook.png" style="float:right; width: 30px; padding:2px;" alt="Facebook"></a>
+<a href="https://www.instagram.com/pour_studio/" ><img src="images/instagram.png" style="float:right; width: 30px; padding:2px;" alt="Instagram"></a>
 <!-- Instagram Icon by https://www.flaticon.com/free-icon/instagram_174855 -->
 <!-- Facebook Icon by https://www.flaticon.com/free-icon/facebook_174848 -->
 <br>
