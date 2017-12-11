@@ -39,7 +39,7 @@
 				padding: 0;
 			}	
 
-.topmenu	{    position: fixed; top:0px; margin: auto; width: 100%; height: 40px;
+.topmenu	{    margin: auto; width: 100%;
 				 font-family: verdana;
 				 padding: 0;
 }
@@ -56,16 +56,17 @@
 
 /* https://www.w3schools.com/css/css_navbar.asp */
 
-.topmenu {
+ul.topmenu {
 				overflow: hidden;
 				background-color: #333;
 				font-family: verdana;
 				position: fixed;
 				width: 100%;
 		}
+		
+ul.topmenu li { float: left;}
 
-.topmenu a {
-				float: left;
+ul.topmenu a {
 				display: block;
 				color: #f2f2f2;
 				font-family: verdana;
@@ -74,9 +75,9 @@
 				text-decoration: none;
 				font-size: 17px;
 }
-.topmenu a.active {background-color: #001a00;
+ul.topmenu a.active {background-color: #001a00;
 				color: white;}
-.topmenu a:hover:not(.active) {background-color: #808080;
+ul.topmenu a:hover:not(.active) {background-color: #808080;
 				color: white;}
 
 /* About, Shop and Contact Us pages grid layout */
@@ -108,7 +109,7 @@
    http://lifeinthegrid.com/simple-css-fixed-header 
    https://www.w3schools.com/css/css_dimension.asp */
  
-.header		{	position: fixed; top:0px; margin: auto; width: 100%; height: 100px; 
+.header		{	position: fixed; top:0px; margin: auto; width: 100%; height: 108px; 
 				background-color: white;
 				font-family: verdana;
 				color: #ffffff;
@@ -116,6 +117,8 @@
 				text-align: center;
 				
 			}
+
+			
 .article	{	 top: 108px; width: 100%; height:auto;
 				background-color: #ffffff;
 				color: #000000;
@@ -136,7 +139,7 @@
 			
 /* Initial code including menu from earlier work done in class*/
 			
-ul   {			list-style-type: none;
+ul.sidemenu   {	list-style-type: none;
 				margin: 0px;
 				padding: 0px;
 				width: 20%;
@@ -146,28 +149,27 @@ ul   {			list-style-type: none;
 				overflow: auto;
 				font-family: verdana;
 				border-right-style: solid;}
-li a {			display: block;
+ul.sidemenu li a {			display: block;
 				color: white;
 				padding: 8px 16px;
 				text-decoration: none;}
-li a.active {background-color: #001a00;
+ul.sidemenu li a.active {background-color: #001a00;
 				color: white;}
-li a:hover:not(.active) {background-color: #808080;
+ul.sidemenu li a:hover:not(.active) {background-color: #808080;
 				color: white;}
 				
 .headerimage {	float:center;
-				width: auto;}
+				max-width:100%;
+				padding: 0px 0px 20px 0px;}
+				
+.imgabout {		float:right;
+				width: 30%;}
 				
 /* Responsive Design https://www.w3schools.com/html/html_responsive.asp */				
 				
 @media screen and (max-width: 900px){
 
-.header {
-				grid-columns: 1/7;
-				grid-rows: 2;
-				position: relative;
-				padding: 0;
-			}
+
 
 .article {
 				grid-columns: 1/7;
@@ -183,29 +185,57 @@ li a:hover:not(.active) {background-color: #808080;
 				position: fixed;
 				padding: 0;
 			}	
-	
-	
-.headerimage { width: auto;}
+			
+.sidebar {width:100%}
+			
+.header {top:40px;}
+
+.article {top:208px;}
 
 
 
-ul {
+ul.sidemenu {
         width: 100%;
         height: auto;
         position: relative;
     }
-li a {
+ul.sidemenu li a {
         float: left;
         padding: 15px;
     }
 .article {margin-left: 0;}
+
+
+.imgabout {	
+				width: 26%;
+				min-width: 200px;}
+
+h1		{ text-align: left;
+		  padding: 50px 0px 0px 0px;
+		}
+p		{ text-align:left;}
+
+
 }
 
 @media screen and (max-width: 400px) {
- li a {
+ul.sidemenu li a {
         text-align: center;
         float: none;
     }
+ul.topmenu li {float: none;}
+
+ul.topmenu li a {
+        text-align: center;
+        float: none;
+    }	
+.homearticle {top: 120px;}
+
+.header {top:120px;}
+
+.article {top:600px;}
+
+.imgabout {float: center;}
 
 }
 

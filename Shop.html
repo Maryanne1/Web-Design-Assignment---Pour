@@ -21,43 +21,41 @@
 		height:330px;
 		width: 283px;
 		margin: 5px;
-		border: 1px solid #2f261e; 
+		border: 1px solid #333; 
 		border-radius: 0px; }
 .portfolioimg {	
+		position: relative;
 		padding: 15px;
 		height:280px;
 		width: 280px;}
-.producttext { float: left;
+.producttext { 
+		float: left;
 		padding-left: 18px;
-		opacity: 1;
-		display: block;
-		transition: .5s ease;
-		backface-visibility: hidden;}
+		}
 .shoppingimg {
 		height:15px;
 		width: 15px;}
-img { 	width: auto;}
-
 .middle {
-  transition: .2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+		transition: .2s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
 }
 
 .imagewriting { 
-  background-color: #333;
-  color: white;
-  font-size: 16px;
-  padding: 16px 15px;
+		display: block;
+		transition: .2s ease;
+		background-color: #333;
+		color: white;
+		font-size: 16px;
+		padding: 16px 15px;
 }
 
 .portfoliobox:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-	
 }
 .portfolioimg:hover {
 	opacity: 0.3;
@@ -73,7 +71,7 @@ img { 	width: auto;}
 <!-- hover box shadow https://www.w3schools.com/css/css3_images.asp -->
 
 </style>
-<title>POUR portfolio</title>
+  <title>POUR portfolio</title>
 
 </head>
 
@@ -82,11 +80,11 @@ img { 	width: auto;}
 
 
 <div class="header">
-<img class="headerimage" src="images/LogoSmall.png">
+  <img class="headerimage" src="images/LogoSmall.png">
 </div>
 
 <div class="sidebar">
-<ul>
+<ul class="sidemenu">
   <li><a class="active" href="Index.html">Home</a></li>
   <li><a href="About.html">About</a></li>
   <li><a href="ContactUS.html">Contact Us</a></li>
@@ -94,70 +92,187 @@ img { 	width: auto;}
 </div>
 
 <div class="article">
+<br>
 <!-- Lighting, ceramics, bespoke pieces (pictures with info)-->
 <!-- Paypal Icon by https://www.flaticon.com/free-icon/paypal_174861 -->
 <div class="portfoliobox">
-<a href="#" alt="Light 1">
-<img class="portfolioimg" src="images/instaimage1.png"> 
-<div class="middle"> <div class="imagewriting">View Product</div> </div></a>
-<div class="producttext">
-Light 1  </div> <a href="#" alt="Add to Cart"><img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage1.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Light 1  
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
 
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage2.png" href="#" alt="Light 2">
-<div class="producttext">
-Light 2  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage2.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Light 2
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage3.png" href="#" alt="Light 3">
-<div class="producttext">
-Light 3  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage3.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Light 3  
+   </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage4.png">
-<div class="producttext">
-Ceramic 1  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage4.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext"> Ceramic 1   
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage5.png">
-<div class="producttext">
-Ceramic 2  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage5.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext"> Ceramic 2  
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage6.png">
-<div class="producttext">
-Ceramic 3  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage6.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Ceramic 3  
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage7.png">
-<div class="producttext">
-Light 4  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage7.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Light 4  
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage8.png">
-<div class="producttext">
-Light 5  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage8.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Light 5  
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage9.png">
-<div class="producttext">
-Light 6  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage9.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Light 6  
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage10.png">
-<div class="producttext">
-Stamp 1  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage10.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Stamp 1  
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage11.png">
-<div class="producttext">
-Stamp 2  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage11.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Stamp 2  
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
+
 <div class="portfoliobox">
-<img class="portfolioimg" src="images/instaimage12.png">
-<div class="producttext">
-Stamp 3  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="images/shopping-cart.png"></a>
+  <a href="#" alt="Light 1">
+  <img class="portfolioimg" src="images/instaimage12.png"> 
+    <div class="middle"> 
+	  <div class="imagewriting">View Product
+	  </div>
+	</div>
+  </a>
+  <div class="producttext">Stamp 3
+  </div> 
+  <a href="#" alt="Add to Cart">
+    <img class="shoppingimg" src="images/shopping-cart.png">
+  </a>
 </div>
 
 
@@ -166,8 +281,8 @@ Stamp 3  </div> <a href="#" alt="Add to Cart"> <img class="shoppingimg" src="ima
 
 <div class="footer">
 Subscribe to our mailing list: <input type="text" name="email" value="">
-<img src="images/facebook.png" href="#" style="float:right; width: 30px; padding:2px;">
-<img src="images/instagram.png" href="#" style="float:right; width: 30px; padding:2px;">
+<img src="images/facebook.png" href="https://www.facebook.com/" style="float:right; width: 30px; padding:2px;">
+<img src="images/instagram.png" href="https://www.instagram.com/pour_studio/" style="float:right; width: 30px; padding:2px;">
 <!-- Instagram Icon by https://www.flaticon.com/free-icon/instagram_174855 -->
 <!-- Facebook Icon by https://www.flaticon.com/free-icon/facebook_174848 -->
 <br>
